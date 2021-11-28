@@ -35,6 +35,84 @@
     <main class="page-main">
       <h1 class="page-main__title">Оставьте свой отзыв</h1>
       <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях.</p>
+      <form class="page-main__reviews-form reviews-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <fieldset class="reviews-form__fieldset info-data">
+          <legend class="info-data__title">Представьтесь:</legend>
+          <ul class="info-data__data-list data-list">
+            <li class="data-list__item">
+              <label class="data-list__label" for="your-name">Имя*:</label>
+              <input class="data-list__input" type="text" name="your-name" id="your-name" placeholder="Пётр" aria-label="Введите ваше имя">
+            </li>
+            <li class="data-list__item">
+              <label class="data-list__label" for="your-family-name">Фамилия*:</label>
+              <input class="data-list__input" type="text" name="your-family-name" id="your-family-name" placeholder="Иванов" aria-label="Введите вашу фамилию">
+            </li>
+            <li class="data-list__item">
+              <label class="data-list__label" for="your-father-name">Отчество:</label>
+              <input class="data-list__input" type="text" name="your-father-name" id="your-father-name" placeholder="Александрович" aria-label="Введите ваше отчество (необязательно)">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__fieldset info-contacts">
+          <legend class="info-contacts__title">Контактная информация:</legend>
+          <ul class="info-contacts__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <label class="contacts-list__label" for="your-phone">Контактный телефон*:</label>
+              <input class="contacts-list__input" type="tel" name="your-phone" id="your-phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон">
+            </li>
+            <li class="contacts-list__item">
+              <label class="contacts-list__label" for="your-email">Электронная почта*:</label>
+              <input class="contacts-list__input" type="email" name="your-email" id="your-email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__fieldset info-impression">
+          <legend class="info-impression__title">Ваше общее впечатление:</legend>
+          <ul class="info-impression__impression-list impression-list">
+            <li class="impression-list__item">
+              <input class="impression-list__input" type="radio" name="your-impression" id="impression-plus" value="positive" aria-label="Выберите этот пункт при общем положительном впечатлении" checked>
+              <label class="impression-list__label" for="impression-plus">Скорее положительное</label>
+            </li>
+            <li class="impression-list__item">
+              <input class="impression-list__input" type="radio" name="your-impression" id="impression-minus" value="negative" aria-label="Выберите этот пункт при общем отрицательном впечатлении">
+              <label class="impression-list__label" for="impression-minus">Скорее отрицательное</label>
+            </li>
+            <li class="impression-list__item">
+              <input class="impression-list__input" type="radio" name="your-impression" id="impression-zero" value="neutral" aria-label="Выберите этот пункт, если затрудняетесь ответить">
+              <label class="impression-list__label" for="impression-zero">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__fieldset info-visited-sigths">
+          <legend class="info-visited-sigths__title">Посещённые достопримечательности:</legend>
+          <ul class="info-visited-sigths__visit-list visit-list">
+            <li class="visit-list__item">
+              <label class="visit-list__label" for="divel-bridge">Мост Дьявола</label>
+              <input class="visit-list__input" type="checkbox" name="divel-bridge" id="divel-bridge" aria-label="Выберите этот пункт при посещении Моста Дьявола" checked>
+            </li>
+            <li class="visit-list__item">
+              <label class="visit-list__label" for="bell-mountain">Гора-Колокол</label>
+              <input class="visit-list__input" type="checkbox" name="bell-mountain" id="bell-mountain" aria-label="Выберите этот пункт при посещении Горы-Колокол" checked>
+            </li>
+            <li class="visit-list__item">
+              <label class="visit-list__label" for="slide-park">Слайд-парк</label>
+              <input class="visit-list__input" type="checkbox" name="slide-park" id="slide-park" aria-label="Выберите этот пункт при посещении Слайд-паркa" checked>
+            </li>
+            <li class="visit-list__item">
+              <label class="visit-list__label" for="red-rocks">Красные скалы</label>
+              <input class="visit-list__input" type="checkbox" name="red-rocks" id="red-rocks" aria-label="Выберите этот пункт при посещении Красных скал">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__fieldset info-emotions">
+          <legend class="info-emotions__title">Опишите свои эмоции:</legend>
+          <textarea class="info-emotions__text" name="your-message" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <div class="reviews-form__button info-send">
+          <button class="info-send__button" type="submit">Отправить отзыв</button>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__hashtag hashtag">
