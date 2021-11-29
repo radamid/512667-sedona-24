@@ -42,11 +42,11 @@
           <ul class="info-data__data-list data-list">
             <li class="data-list__item">
               <label class="data-list__label" for="your-name">Имя*:</label>
-              <input class="data-list__input" type="text" name="your-name" id="your-name" placeholder="Пётр" aria-label="Введите ваше имя">
+              <input class="data-list__input" type="text" name="your-name" id="your-name" placeholder="Пётр" aria-label="Введите ваше имя" required>
             </li>
             <li class="data-list__item">
               <label class="data-list__label" for="your-family-name">Фамилия*:</label>
-              <input class="data-list__input" type="text" name="your-family-name" id="your-family-name" placeholder="Иванов" aria-label="Введите вашу фамилию">
+              <input class="data-list__input" type="text" name="your-family-name" id="your-family-name" placeholder="Иванов" aria-label="Введите вашу фамилию" required>
             </li>
             <li class="data-list__item">
               <label class="data-list__label" for="your-father-name">Отчество:</label>
@@ -59,11 +59,11 @@
           <ul class="info-contacts__contacts-list contacts-list">
             <li class="contacts-list__item">
               <label class="contacts-list__label" for="your-phone">Контактный телефон*:</label>
-              <input class="contacts-list__input" type="tel" name="your-phone" id="your-phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон">
+              <input class="contacts-list__input" type="tel" name="your-phone" id="your-phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон" required>
             </li>
             <li class="contacts-list__item">
               <label class="contacts-list__label" for="your-email">Электронная почта*:</label>
-              <input class="contacts-list__input" type="email" name="your-email" id="your-email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту">
+              <input class="contacts-list__input" type="email" name="your-email" id="your-email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту" required>
             </li>
           </ul>
         </fieldset>
@@ -107,7 +107,8 @@
         </fieldset>
         <fieldset class="reviews-form__fieldset info-emotions">
           <legend class="info-emotions__title">Опишите свои эмоции:</legend>
-          <textarea class="info-emotions__text" name="your-message" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
+          <label class="visually-hidden" for="your-emotions">Опишите подробно все свои восторги</label>
+          <textarea class="info-emotions__text" name="your-message" id="your-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="reviews-form__button info-send">
           <button class="info-send__button" type="submit">Отправить отзыв</button>
