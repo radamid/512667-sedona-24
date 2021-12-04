@@ -1,6 +1,19 @@
-.main-advantages__wrapper,
-.main-advantages__image {
+.main-advantages {
+  display: flex;
+  flex-wrap: wrap;
   background-color: @blue-base;
+}
+
+.main-advantages__wrapper {
+  background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 400px;
+  }
 }
 
 .main-advantages__title {
@@ -20,4 +33,23 @@
   text-transform: uppercase;
   color: @white-base;
   background-color: inherit;
+}
+
+.main-advantages__image {
+  @media (min-width: @tablet-width) {
+    flex-basis: 512px;
+
+    &--order {
+      order: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 800px;
+  }
+}
+
+.main-advantages__advice {
+  width: 100%;
+  max-width: 1200px;
 }
