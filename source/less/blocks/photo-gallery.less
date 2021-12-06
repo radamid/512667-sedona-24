@@ -1,3 +1,21 @@
 .photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
   background-color: inherit;
+}
+
+.photo-gallery__article {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-gallery__article--first {
+  width: 100%;
 }
