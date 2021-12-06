@@ -1,6 +1,19 @@
-.main-advantages__wrapper,
-.main-advantages__image {
+.main-advantages {
+  display: flex;
+  flex-wrap: wrap;
   background-color: @blue-base;
+}
+
+.main-advantages__wrapper {
+  background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .main-advantages__title {
@@ -20,4 +33,18 @@
   text-transform: uppercase;
   color: @white-base;
   background-color: inherit;
+}
+
+.main-advantages__image {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+
+    &--order {
+      order: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
