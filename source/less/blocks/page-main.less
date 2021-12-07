@@ -3,6 +3,7 @@
 }
 
 .page-main__title {
+  margin: 0;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
@@ -11,6 +12,7 @@
 }
 
 .page-main__text {
+  margin: 0;
   padding: 0 20px;
   .slim-text();
   font-size: 14px;
@@ -41,5 +43,17 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+  }
+}
+
+.page-main__reviews-form {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
   }
 }

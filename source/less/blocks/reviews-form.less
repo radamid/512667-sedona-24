@@ -1,3 +1,17 @@
 .reviews-form {
-  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews-form__fieldset {
+  width: 100%;
+}
+
+.reviews-form__button {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

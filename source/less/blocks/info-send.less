@@ -1,8 +1,3 @@
-.info-send {
-  text-align: center;
-  background-color: @blue-base;
-}
-
 .info-send__button {
   .fat-text();
   font-size: 21px;
@@ -10,5 +5,20 @@
   text-transform: uppercase;
   border: 0;
   color: @white-base;
-  background-color: inherit;
+  background-color: @blue-base;
+}
+
+.info-send__notice {
+  display: none;
+  .slim-text();
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @sub-black;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    text-align: right;
+  }
 }
