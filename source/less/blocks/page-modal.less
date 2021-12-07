@@ -1,7 +1,31 @@
 .page-modal {
-  padding: 0 20px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-color: @white-base;
+  box-sizing: border-box;
+}
+
+.page-body > .page-modal--error {
+  top: 25px;
+  width: @mobile-width;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+}
+
+.page-body > .page-modal--success {
+  top: 250px;
+  width: @mobile-width;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
 }
 
 .page-modal__title {
@@ -20,4 +44,16 @@
   text-transform: uppercase;
   color: @sub-black;
   background-color: inherit;
+}
+
+.page-modal--error .info-send__button {
+  width: 280px;
+}
+
+.page-modal--success .info-send__button {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
 }
