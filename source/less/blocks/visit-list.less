@@ -1,8 +1,23 @@
 .visit-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: left;
+}
+
+.visit-list__item {
+  width: 100%;
+  padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 25%;
+  }
 }
 
 .visit-list__label {
