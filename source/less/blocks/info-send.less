@@ -5,10 +5,10 @@
   @media (min-width: @tablet-width) {
     padding: 20px 0;
   }
-}
 
-.info-send--background {
-  background-color: @sub-white;
+  &--background {
+    background-color: @sub-white;
+  }
 }
 
 .info-send__button {
@@ -20,6 +20,17 @@
   border: 0;
   color: @white-base;
   background-color: @blue-base;
+
+  &--error,
+  &--success {
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--success {
+      width: 460px;
+    }
+  }
 }
 
 .info-send__notice {
