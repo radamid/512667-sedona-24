@@ -1,3 +1,14 @@
 .main-nav {
+  position: relative;
   background-color: inherit;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
