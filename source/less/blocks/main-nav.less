@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  min-height: 56px;
   background-color: inherit;
 }
 
@@ -7,8 +8,50 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 63px;
+  height: 56px;
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet-width - 1) {
+  .main-nav--opened {
+    z-index: 2;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  .main-nav--closed {
+    background-color: @white-base;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    background-color: inherit;
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
