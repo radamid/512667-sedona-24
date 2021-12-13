@@ -1,7 +1,22 @@
+.designers {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .designers__title {
   .slim-text();
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black-base;
+}
+
+.designers__link {
+  margin-left: 10px;
+
+  & img {
+    display: block;
+  }
 }
