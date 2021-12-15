@@ -44,11 +44,10 @@
   @media (min-width: @tablet-width) {
     width: 256px;
     margin-bottom: 0;
+    box-sizing: border-box;
 
     &--house {
       padding: 0 35px;
-      box-sizing: border-box;
-      background-image: url("../img/icon-house.svg");
       background-position: center 60px;
       background-size: 75px 72px;
     }
@@ -56,18 +55,14 @@
     &--gift {
       order: 3;
       padding: 0 20px;
-      box-sizing: border-box;
-      background-image: url("../img/icon-gift.svg");
-      background-position: center 63px;
-      background-size: 76px 68px;
+      background-position: center 57px;
+      background-size: 64px 75px;
     }
 
     &--burger {
       padding: 0 50px;
-      box-sizing: border-box;
-      background-image: url("../img/icon-burger.svg");
-      background-position: center 57px;
-      background-size: 64px 75px;
+      background-position: center 63px;
+      background-size: 76px 68px;
     }
   }
 
@@ -116,18 +111,12 @@
   color: @sub-black;
   background-color: inherit;
 
-  & br {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-bottom: 59px;
   }
 
   @media (min-width: @desktop-width) {
-    & br {
-      display: block;
-    }
+    margin-bottom: 78px;
   }
 }

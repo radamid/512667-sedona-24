@@ -1,6 +1,5 @@
 .additional-advantages {
   position: relative;
-  width: 100%;
   padding: 0 20px;
   padding-top: 26px;
   padding-bottom: 25px;
@@ -22,10 +21,12 @@
   @media (min-width: @tablet-width) {
     width: 256px;
     padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    padding-bottom: 62px;
   }
 }
 
@@ -39,14 +40,12 @@
   color: @black-base;
   background-color: inherit;
 
-  @media (max-width: @tablet-width - 1) {
-    & br {
-      display: none;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 106px;
   }
 }
 
@@ -60,18 +59,6 @@
   text-transform: uppercase;
   color: @sub-black;
   background-color: inherit;
-
-  @media (max-width: @tablet-width - 1) {
-    & br {
-      display: none;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    & br:first-child {
-      display: none;
-    }
-  }
 }
 
 .additional-advantages__number {
