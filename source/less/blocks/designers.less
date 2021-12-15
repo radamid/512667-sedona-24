@@ -1,6 +1,5 @@
 .designers {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -11,10 +10,18 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @black-base;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 6px;
+  }
 }
 
 .designers__link {
-  margin-left: 10px;
+  margin-left: 12px;
 
   & img {
     display: block;
