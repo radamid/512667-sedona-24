@@ -33,6 +33,19 @@
 }
 
 @media (max-width: @tablet-width - 1) {
+  .main-nav--opened.main-nav--nojs {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 111px;
+      bottom: -82px;
+      width: 102px;
+      height: 82px;
+      background-image: url("../img/logotype-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   .main-nav--opened .main-nav__list {
     position: absolute;
     left: 0;
