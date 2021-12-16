@@ -1,6 +1,14 @@
 .page-header {
   position: relative;
+  margin-bottom: 32px;
   text-align: center;
+
+  @media (max-width: @tablet-width - 1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .page-header__logo {
