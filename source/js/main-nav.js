@@ -1,8 +1,16 @@
 const navMain = document.querySelector(".main-nav");
 const navToggle = document.querySelector(".main-nav__toggle");
-let navText = document.querySelector(".main-nav__toggle-button");
+const navText = document.querySelector(".main-nav__toggle-button");
 
-navMain.classList.remove("main-nav--nojs");
+if (navMain.classList.contains("main-nav--nojs")) {
+  navMain.classList.remove("main-nav--nojs");
+}
+if (navMain.classList.contains("main-nav--opened")) {
+  navMain.classList.remove("main-nav--opened");
+}
+if (!navMain.classList.contains("main-nav--closed")) {
+  navMain.classList.add("main-nav--closed");
+}
 
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains("main-nav--closed")) {
