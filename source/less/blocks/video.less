@@ -1,0 +1,32 @@
+.video {
+  position: relative;
+}
+
+.video__wrapper {
+  & img {
+    display: block;
+  }
+}
+
+.video__controls {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  padding: 23px 25px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 36px 41px 37px 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 42px;
+  }
+}

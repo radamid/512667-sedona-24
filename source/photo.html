@@ -81,7 +81,7 @@
           <a class="photo__link" href="#">
             <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Фото автодороги-серпантин среди хвойного леса">
           </a>
-          <div class="photo__info photo-info">
+          <div class="photo__info photo-info photo-info--background">
             <div class="photo-info__wrapper">
               <h3 class="photo-info__title">Дорога на север</h3>
               <p class="photo-info__author">Автор фото:
@@ -125,14 +125,19 @@
           <div class="video__wrapper">
             <img src="img/video-mobile.jpg" width="320" height="201" alt="Кадр из презентации, отображающий автодорогу в Седону из Гранд-Каньона">
           </div>
-          <div class="video__controls video-buttons">
-            <button class="video-buttons__replay-button" type="button">
+          <div class="video__controls video-panel">
+            <div class="video-panel__scale">
+              <button class="video-panel__button video-panel__button--scale" type="button">
+                <span class="visually-hidden">Перемотать кадр? Кликни!</span>
+              </button>
+            </div>
+            <button class="video-panel__button video-panel__button--replay" type="button">
               <span class="visually-hidden">Повторить видеопоказ? Кликни!</span>
             </button>
-            <button class="video-buttons__subtitles-button" type="button">
+            <button class="video-panel__button video-panel__button--subtitles" type="button">
               <span class="visually-hidden">Включить/выключить субтитры? Кликни!</span>
             </button>
-            <button class="video-buttons__fullscreen-button" type="button">
+            <button class="video-panel__button video-panel__button--fullscreen" type="button">
               <span class="visually-hidden">Развернуть/свернуть на полный экран? Кликни!</span>
             </button>
           </div>

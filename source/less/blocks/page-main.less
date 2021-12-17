@@ -26,12 +26,23 @@
 
 .page-main__text {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0 20px;
   .slim-text();
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: @sub-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+    padding: 0 165px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+    padding: 0 380px;
+  }
 }
 
 .page-main__advantages {
@@ -59,15 +70,25 @@
 }
 
 .page-main__photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 32px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
     padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
     padding: 0;
   }
+}
+
+.page-main__video-gallery {
+  margin-bottom: 49px;
 }
 
 .page-main__reviews-form {
