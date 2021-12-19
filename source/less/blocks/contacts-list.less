@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
   text-align: left;
@@ -11,6 +12,36 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  &--phone,
+  &--mail {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 58px;
+      height: 58px;
+      background-color: @sub-gray-dark;
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: center center;
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("../img/phone.svg");
+    }
+  }
+
+  &--mail {
+    &::before {
+      background-image: url("../img/mail.svg");
+    }
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -41,6 +72,8 @@
 
 .contacts-list__input {
   width: 100%;
+  min-height: 58px;
+  margin-right: 58px;
   padding: 10px 20px;
   box-sizing: border-box;
   border: 0;
@@ -50,12 +83,12 @@
   color: @black-base;
   background-color: @sub-white;
 
+  &::placeholder {
+    color: @black-base;
+  }
+
   @media (min-width: @desktop-width) {
     width: auto;
     margin-left: 10px;
   }
-}
-
-.contacts-list__input::placeholder {
-  color: @black-base;
 }

@@ -15,4 +15,11 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @black-base;
+
+  @media (min-width: @tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }

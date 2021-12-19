@@ -1,14 +1,28 @@
 .data-list {
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   list-style: none;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 58px;
+    border-left: 1px solid @gray-border-left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 79px;
+  }
 }
 
 .data-list__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .data-list__label {
@@ -21,7 +35,7 @@
 
 .data-list__input {
   width: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
   padding: 10px 20px;
   box-sizing: border-box;
   border: 0;
