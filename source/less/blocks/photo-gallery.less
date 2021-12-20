@@ -1,11 +1,23 @@
 .photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
   background-color: inherit;
 }
 
 .photo-gallery__article {
   position: relative;
+
+  @media (max-width: @tablet-width - 1) {
+    margin-top: 22px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -21px;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background-color: @gray-base--disabled;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 324px;

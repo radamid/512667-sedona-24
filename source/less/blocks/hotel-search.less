@@ -35,35 +35,33 @@
 }
 
 .hotel-search__button {
-  padding-top: 15px;
-  padding-bottom: 17px;
   .fat-text();
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: @white-base;
-  background-color: @blue-base;
-  cursor: pointer;
-
-  &:not(.hotel-search__button--disabled):hover {
-    background-color: @blue-base--hover;
-  }
-
-  &:not(.hotel-search__button--disabled):active {
-    color: fade(@white-base, 30%);
-    background-color: @blue-base--active;
-  }
-
-  &--disabled {
-    color: @white-base;
-    background-color: @gray-base--disabled;
-    cursor: text;
-  }
 }
 
 .hotel-search__link {
   display: block;
-  color: inherit;
-  cursor: inherit;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  color: @white-base;
+  background-color: @blue-base;
+
+  &--disabled {
+    background-color: @gray-base--disabled;
+    cursor: text;
+  }
+
+  &:not(&--disabled):hover,
+  &:not(&--disabled):focus {
+    background-color: @blue-base--hover;
+    outline: none;
+  }
+
+  &:not(&--disabled):active {
+    color: fade(@white-base, 30%);
+    background-color: @blue-base--active;
+  }
 }

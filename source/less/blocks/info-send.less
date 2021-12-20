@@ -1,14 +1,5 @@
 .info-send {
-  padding: 10px 0;
   background-color: inherit;
-
-  @media (min-width: @tablet-width) {
-    padding: 20px 0;
-  }
-
-  &--background {
-    background-color: @sub-white;
-  }
 }
 
 .info-send__button {
@@ -20,15 +11,52 @@
   border: 0;
   color: @white-base;
   background-color: @blue-base;
+  cursor: pointer;
 
-  &--error,
+  &:hover,
+  &:focus {
+    background-color: @blue-base--hover;
+    outline: none;
+  }
+
+  &:active {
+    color: fade(@white-base, 30%);
+    background-color: @blue-base--active;
+  }
+
+  &--failure {
+    width: 180px;
+    font-size: 18px;
+  }
+
   &--success {
+    width: 280px;
+    font-size: 18px;
+  }
+
+  &--reviews-form {
     width: 280px;
   }
 
   @media (min-width: @tablet-width) {
+    &--failure {
+      width: 272px;
+      font-size: 21px;
+    }
+
     &--success {
-      width: 460px;
+      width: 458px;
+      font-size: 21px;
+    }
+
+    &--reviews-form {
+      width: 320px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--reviews-form {
+      width: 480px;
     }
   }
 }
