@@ -73,4 +73,9 @@
   &:checked + .impression-list__label::after {
     display: block;
   }
+
+  &:checked:focus ~ .impression-list__label::before {
+    border-color: @gray-base--disabled;
+    background-color: @gray-base--disabled;
+  }
 }

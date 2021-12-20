@@ -6,6 +6,17 @@
   padding: 0;
   list-style: none;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 95px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .visit-list__item {
@@ -20,10 +31,11 @@
   @media (min-width: @tablet-width) {
     width: 50%;
     margin-bottom: 0;
+    padding: 31px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 25%;
+    width: auto;
   }
 }
 
@@ -84,5 +96,11 @@
 
   &:checked + .visit-list__label::after {
     display: block;
+  }
+
+  &:focus ~ .visit-list__label::before,
+  &:checked:focus ~ .visit-list__label::before {
+    border-color: @gray-base--disabled;
+    background-color: @gray-base--disabled;
   }
 }

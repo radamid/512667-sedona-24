@@ -37,15 +37,26 @@
   width: 100%;
   margin-left: 15px;
   padding: 10px 20px;
-  box-sizing: border-box;
-  border: 0;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
   color: @black-base;
   background-color: @sub-white;
-}
+  border: 4px solid @sub-white;
+  box-sizing: border-box;
 
-.data-list__input::placeholder {
-  color: @black-base;
+  &::placeholder {
+    color: @black-base;
+  }
+
+  &:hover {
+    background-color: @gray-base--disabled;
+    border-color: @gray-base--disabled;
+  }
+
+  &:focus {
+    background-color: @white-base;
+    border: 4px solid @gray-base--disabled;
+    outline: none;
+  }
 }

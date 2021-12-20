@@ -1,5 +1,6 @@
 .page-main {
   text-align: center;
+  background-color: @white-base;
 }
 
 .page-main__title {
@@ -17,6 +18,10 @@
     margin: 0 auto;
     margin-bottom: 30px;
     font-size: 21px;
+
+    &--inner {
+      font-size: 30px;
+    }
 
     & br {
       display: none;
@@ -89,6 +94,14 @@
 
 .page-main__video-gallery {
   margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .page-main__reviews-form {

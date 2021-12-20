@@ -11,6 +11,18 @@
   border: 0;
   color: @white-base;
   background-color: @blue-base;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @blue-base--hover;
+    outline: none;
+  }
+
+  &:active {
+    color: fade(@white-base, 30%);
+    background-color: @blue-base--active;
+  }
 
   &--failure {
     width: 180px;

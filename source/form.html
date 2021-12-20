@@ -8,7 +8,7 @@
   </head>
   <body class="page-body container">
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
       <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
@@ -30,18 +30,18 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__intro intro">
+      <div class="page-header__intro">
         <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Оставьте свой отзыв</h1>
+      <h1 class="page-main__title page-main__title--inner">Оставьте свой отзыв</h1>
       <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях.</p>
       <form class="page-main__reviews-form reviews-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <fieldset class="reviews-form__fieldset info-data">
           <legend class="reviews-form__legend info-data__title">Представьтесь:</legend>
-          <ul class="info-data__data-list data-list">
+          <ul class="info-data__list data-list">
             <li class="data-list__item">
               <label class="data-list__label" for="your-name">Имя*:</label>
               <input class="data-list__input" type="text" name="your-name" id="your-name" placeholder="Пётр" aria-label="Введите ваше имя" required>
@@ -58,9 +58,9 @@
         </fieldset>
         <fieldset class="reviews-form__fieldset info-contacts">
           <legend class="reviews-form__legend info-contacts__title">Контактная информация:</legend>
-          <ul class="info-contacts__contacts-list contacts-list">
+          <ul class="info-contacts__list contacts-list">
             <li class="contacts-list__item contacts-list__item--phone">
-              <label class="contacts-list__label" for="your-phone">Контактный телефон*:</label>
+              <label class="contacts-list__label" for="your-phone"><span>Контактный</span> телефон*:</label>
               <input class="contacts-list__input" type="tel" name="your-phone" id="your-phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон" required>
             </li>
             <li class="contacts-list__item contacts-list__item--mail">
@@ -71,7 +71,7 @@
         </fieldset>
         <fieldset class="reviews-form__fieldset info-impression">
           <legend class="reviews-form__legend info-impression__title">Ваше общее впечатление:</legend>
-          <ul class="info-impression__impression-list impression-list">
+          <ul class="info-impression__list impression-list">
             <li class="impression-list__item">
               <input class="impression-list__input visually-hidden" type="radio" name="your-impression" id="impression-plus" value="positive" aria-label="Выберите этот пункт при общем положительном впечатлении" checked>
               <label class="impression-list__label" for="impression-plus">Скорее положительное</label>
@@ -87,8 +87,8 @@
           </ul>
         </fieldset>
         <fieldset class="reviews-form__fieldset info-visited-sigths">
-          <legend class="reviews-form__legend info-visited-sigths__title">Посещённые достопримечательности:</legend>
-          <ul class="info-visited-sigths__visit-list visit-list">
+          <legend class="reviews-form__legend info-visited-sigths__title">Посещённые <br>достопримечательности:</legend>
+          <ul class="info-visited-sigths__list visit-list">
             <li class="visit-list__item">
               <input class="visit-list__input visually-hidden" type="checkbox" name="divel-bridge" id="divel-bridge" aria-label="Выберите этот пункт при посещении Моста Дьявола" checked>
               <label class="visit-list__label" for="divel-bridge">Мост Дьявола</label>

@@ -43,11 +43,12 @@
       padding-bottom: 6px;
     }
 
-    &:not(.site-list__item--current):hover {
+    &:not(&--current):hover,
+    &:not(&--current):focus {
       background-color: @blue-base--hover;
     }
 
-    &:not(.site-list__item--current):active {
+    &:not(&--current):active {
       color: fade(@white-base, 30%);
       background-color: @blue-base--active;
     }
@@ -70,11 +71,12 @@
       color: @brown-base;
     }
 
-    &:not(.site-list__item--current):hover {
+    &:not(&--current):hover,
+    &:not(&--current):focus {
       color: @blue-base;
     }
 
-    &:not(.site-list__item--current):active {
+    &:not(&--current):active {
       color: fade(@black-base, 30%);
     }
   }
