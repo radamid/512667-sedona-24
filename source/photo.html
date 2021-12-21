@@ -11,9 +11,9 @@
       <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
-      <nav class="page-header__nav main-nav">
+      <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__toggle-button visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -31,11 +31,11 @@
         </ul>
       </nav>
       <div class="page-header__intro">
-        <img src="img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
+        <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Фото и видео</h1>
+      <h1 class="page-main__title page-main__title--inner">Фото и видео</h1>
       <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <section class="page-main__photo-gallery photo-gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
@@ -81,7 +81,7 @@
           <a class="photo__link" href="#">
             <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Фото автодороги-серпантин среди хвойного леса">
           </a>
-          <div class="photo__info photo-info">
+          <div class="photo__info photo-info photo-info--background">
             <div class="photo-info__wrapper">
               <h3 class="photo-info__title">Дорога на север</h3>
               <p class="photo-info__author">Автор фото:
@@ -125,14 +125,19 @@
           <div class="video__wrapper">
             <img src="img/video-mobile.jpg" width="320" height="201" alt="Кадр из презентации, отображающий автодорогу в Седону из Гранд-Каньона">
           </div>
-          <div class="video__controls video-buttons">
-            <button class="video-buttons__replay-button" type="button">
+          <div class="video__controls video-panel">
+            <div class="video-panel__scale">
+              <button class="video-panel__button video-panel__button--scale" type="button">
+                <span class="visually-hidden">Перемотать кадр? Кликни!</span>
+              </button>
+            </div>
+            <button class="video-panel__button video-panel__button--replay" type="button">
               <span class="visually-hidden">Повторить видеопоказ? Кликни!</span>
             </button>
-            <button class="video-buttons__subtitles-button" type="button">
+            <button class="video-panel__button video-panel__button--subtitles" type="button">
               <span class="visually-hidden">Включить/выключить субтитры? Кликни!</span>
             </button>
-            <button class="video-buttons__fullscreen-button" type="button">
+            <button class="video-panel__button video-panel__button--fullscreen" type="button">
               <span class="visually-hidden">Развернуть/свернуть на полный экран? Кликни!</span>
             </button>
           </div>
@@ -167,9 +172,10 @@
         <b class="designers__title">Разработано:</b>
         <a class="designers__link designers__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
-          <img src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTML Academy">
+          <img src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

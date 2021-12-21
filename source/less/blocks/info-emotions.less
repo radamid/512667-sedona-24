@@ -10,21 +10,36 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @black-base;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .info-emotions__text {
   width: 100%;
   height: 160px;
   padding: 10px 20px;
-  box-sizing: border-box;
-  border: 0;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
   color: @black-base;
   background-color: @sub-white;
-}
+  border: 4px solid @sub-white;
+  box-sizing: border-box;
 
-.info-emotions__text::placeholder {
-  color: @black-base;
+  &::placeholder {
+    color: @black-base;
+  }
+
+  &:hover {
+    background-color: @gray-base--disabled;
+    border-color: @gray-base--disabled;
+  }
+
+  &:focus {
+    background-color: @white-base;
+    border: 4px solid @gray-base--disabled;
+    outline: none;
+  }
 }

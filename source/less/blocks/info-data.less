@@ -9,9 +9,22 @@
 }
 
 .info-data__title {
+  padding-top: 21px;
+  padding-bottom: 27px;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black-base;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 21px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
