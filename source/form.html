@@ -13,7 +13,10 @@
   <body class="page-body container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype--desktop.svg">
+          <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
