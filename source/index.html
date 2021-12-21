@@ -54,7 +54,11 @@
               <p class="main-advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="main-advantages__image">
-              <img src="img/photo-city--mobile@1x.jpg" width="320" height="260" alt="Фото города Седоны">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city--desktop@1x.jpg 1x, img/photo-city--desktop@2x.jpg 2x, img/photo-city--desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-city--tablet@1x.jpg 1x, img/photo-city--tablet@2x.jpg 2x, img/photo-city--tablet@3x.jpg 3x">
+                <img src="img/photo-city--mobile@1x.jpg" srcset="img/photo-city--mobile@2x.jpg 2x, img/photo-city--mobile@3x.jpg 3x" width="320" height="260" alt="Фото города Седоны">
+              </picture>
             </div>
             <b class="visually-hidden">Наши рекомендации</b>
             <ul class="main-advantages__advice advices-list">
@@ -79,7 +83,11 @@
               <p class="main-advantages__text">Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
             </div>
             <div class="main-advantages__image main-advantages__image--order">
-              <img src="img/photo-bridge--mobile@1x.jpg" width="320" height="260" alt="Фото «Моста Дьявола»">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge--desktop@1x.jpg 1x, img/photo-bridge--desktop@2x.jpg 2x, img/photo-bridge--desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge--tablet@1x.jpg 1x, img/photo-bridge--tablet@2x.jpg 2x, img/photo-bridge--tablet@3x.jpg 3x">
+                <img src="img/photo-bridge--mobile@1x.jpg" srcset="img/photo-bridge--mobile@2x.jpg 2x, img/photo-bridge--mobile@3x.jpg 3x" width="320" height="260" alt="Фото «Моста Дьявола»">
+              </picture>
             </div>
           </li>
           <li class="advantages-list__item additional-advantages">
