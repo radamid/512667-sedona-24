@@ -6,6 +6,22 @@
   & img {
     display: block;
   }
+
+  @media (min-width: @tablet-width) {
+    & img {
+      width: 648px;
+      height: 500px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 80px;
+
+    & img {
+      width: 800px;
+      height: 500px;
+    }
+  }
 }
 
 .video__controls {
@@ -26,7 +42,10 @@
     padding: 36px 41px 37px 35px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    margin: 0 80px;
     padding-right: 42px;
+    box-sizing: border-box;
   }
 }
