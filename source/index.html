@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="favicons.webmanifest">
   </head>
   <body class="page-body container">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype--desktop.svg">
+          <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -47,7 +54,11 @@
               <p class="main-advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="main-advantages__image">
-              <img src="img/photo-city@1x1.jpg" width="320" height="260" alt="Фото города Седоны">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city--desktop@1x.jpg 1x, img/photo-city--desktop@2x.jpg 2x, img/photo-city--desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-city--tablet@1x.jpg 1x, img/photo-city--tablet@2x.jpg 2x, img/photo-city--tablet@3x.jpg 3x">
+                <img src="img/photo-city--mobile@1x.jpg" srcset="img/photo-city--mobile@2x.jpg 2x, img/photo-city--mobile@3x.jpg 3x" width="320" height="260" alt="Фото города Седоны">
+              </picture>
             </div>
             <b class="visually-hidden">Наши рекомендации</b>
             <ul class="main-advantages__advice advices-list">
@@ -72,7 +83,11 @@
               <p class="main-advantages__text">Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
             </div>
             <div class="main-advantages__image main-advantages__image--order">
-              <img src="img/photo-bridge@1x1.jpg" width="320" height="260" alt="Фото «Моста Дьявола»">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge--desktop@1x.jpg 1x, img/photo-bridge--desktop@2x.jpg 2x, img/photo-bridge--desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge--tablet@1x.jpg 1x, img/photo-bridge--tablet@2x.jpg 2x, img/photo-bridge--tablet@3x.jpg 3x">
+                <img src="img/photo-bridge--mobile@1x.jpg" srcset="img/photo-bridge--mobile@2x.jpg 2x, img/photo-bridge--mobile@3x.jpg 3x" width="320" height="260" alt="Фото «Моста Дьявола»">
+              </picture>
             </div>
           </li>
           <li class="advantages-list__item additional-advantages">

@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона. Форма отзыва</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="favicons.webmanifest">
   </head>
   <body class="page-body container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype--desktop.svg">
+          <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -30,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__intro">
+      <div class="page-header__intro page-header__intro--inner">
         <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
       </div>
     </header>
