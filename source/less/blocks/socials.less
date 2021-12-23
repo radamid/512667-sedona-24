@@ -25,27 +25,22 @@
 }
 
 .socials__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
-  background-color: inherit;
-  background-repeat: no-repeat;
-  background-position: center center;
 
   &:active {
     opacity: 0.3;
   }
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
   &--facebook {
     width: 47px;
-    background-image: url("../img/icon-facebook.svg");
   }
 
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+  & svg {
+    opacity: 1;
+    fill: @white-base;
   }
 }
