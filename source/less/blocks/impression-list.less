@@ -4,14 +4,28 @@
   padding: 0;
   list-style: none;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 38px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    margin-bottom: 48px;
+  }
 }
 
 .impression-list__item {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 16px 0;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -23,6 +37,14 @@
   line-height: 26px;
   color: @black-base;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 79px;
+  }
 
   &::before {
     position: absolute;

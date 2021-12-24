@@ -11,7 +11,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 16px 20px;
     background-color: @sub-white;
 
     &--background {
@@ -28,6 +28,12 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 64px;
+  margin: 0;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .photo-info__title,

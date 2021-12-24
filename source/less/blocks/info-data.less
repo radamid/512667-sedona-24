@@ -9,8 +9,6 @@
 }
 
 .info-data__title {
-  padding-top: 21px;
-  padding-bottom: 27px;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
@@ -18,13 +16,28 @@
   color: @black-base;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 58px;
     font-size: 21px;
+    text-align: left;
 
-    &::before,
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 292px;
+      background-color: @gray-base--disabled;
+    }
+
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-left: 79px;
   }
 }
