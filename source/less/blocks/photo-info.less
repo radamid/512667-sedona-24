@@ -57,15 +57,24 @@
 }
 
 .photo-info__likes-button {
-  width: 23px;
-  height: 21px;
   margin-right: 14px;
   border: none;
   background-color: inherit;
-  background-image: url("../img/like-icon.svg");
-  background-repeat: no-repeat;
+  cursor: pointer;
+
+  & svg {
+    opacity: 0.3;
+    fill: @black-base;
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    & svg {
+      opacity: 1;
+      fill: @white-base;
+    }
   }
 }
