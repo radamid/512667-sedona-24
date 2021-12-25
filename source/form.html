@@ -67,11 +67,11 @@
           <legend class="reviews-form__legend info-contacts__title">Контактная информация:</legend>
           <ul class="info-contacts__list contacts-list">
             <li class="contacts-list__item contacts-list__item--phone">
-              <label class="contacts-list__label" for="your-phone"><span>Контактный</span> телефон*:</label>
+              <label class="contacts-list__label contacts-list__label--phone" for="your-phone"><span>Контактный</span> телефон*:</label>
               <input class="contacts-list__input" type="tel" name="your-phone" id="your-phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон" required>
             </li>
             <li class="contacts-list__item contacts-list__item--mail">
-              <label class="contacts-list__label" for="your-email">Электронная почта*:</label>
+              <label class="contacts-list__label contacts-list__label--mail" for="your-email">Электронная почта*:</label>
               <input class="contacts-list__input" type="email" name="your-email" id="your-email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту" required>
             </li>
           </ul>
@@ -134,16 +134,25 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="#">
+              <svg width="18" height="15">
+                <use xlink:href="img/sprite.svg#logo-twitter"></use>
+              </svg>
               <span class="visually-hidden">Наш твиттер</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="#">
+              <svg width="9" height="19">
+                <use xlink:href="img/sprite.svg#logo-facebook"></use>
+              </svg>
               <span class="visually-hidden">Наш фейсбук</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
+              <svg width="20" height="14">
+                <use xlink:href="img/sprite.svg#logo-youtube"></use>
+              </svg>
               <span class="visually-hidden">Наш ютуб-канал</span>
             </a>
           </li>
@@ -152,8 +161,10 @@
       <div class="page-footer__designers designers">
         <b class="designers__title">Разработано:</b>
         <a class="designers__link designers__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
           <span class="visually-hidden">HTML Academy</span>
-          <img src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

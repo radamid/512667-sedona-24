@@ -23,7 +23,20 @@
 .designers__link {
   margin-left: 12px;
 
-  & img {
-    display: block;
+  &--htmlacademy {
+    & svg {
+      opacity: 1;
+      fill: @black-base;
+    }
+
+    &:hover svg {
+      opacity: 1;
+      fill: @blue-base;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+      fill: @black-base;
+    }
   }
 }

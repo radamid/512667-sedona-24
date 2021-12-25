@@ -5,6 +5,7 @@
 }
 
 .info-emotions__title {
+  padding-bottom: 15px;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
@@ -19,7 +20,7 @@
 .info-emotions__text {
   width: 100%;
   height: 160px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   .fat-text();
   font-size: 18px;
   line-height: 26px;
@@ -41,5 +42,9 @@
     background-color: @white-base;
     border: 4px solid @gray-base--disabled;
     outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
   }
 }

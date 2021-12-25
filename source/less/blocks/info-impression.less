@@ -17,11 +17,18 @@
   color: @black-base;
 
   @media (min-width: @tablet-width) {
+    padding-top: 0;
     font-size: 21px;
+    text-align: left;
 
     &::before,
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-left: 79px;
   }
 }
