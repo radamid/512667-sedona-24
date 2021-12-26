@@ -21,10 +21,18 @@
 
     &--inner {
       font-size: 30px;
+      margin-top: 6px;
+      margin-bottom: 34px;
     }
 
     & br {
       display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--inner {
+      margin-top: 56px;
     }
   }
 }
@@ -80,14 +88,16 @@
   margin: 0;
   margin-bottom: 32px;
   padding: 0 20px;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 58px;
+    margin-top: 78px;
+    margin-bottom: 62px;
     padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 58px;
     padding: 0;
   }
 }
@@ -100,6 +110,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
     padding: 0 120px;
   }
 }
@@ -108,10 +119,12 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 85px;
     padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 65px;
     padding: 0 120px;
   }
 }
