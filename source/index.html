@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -14,7 +14,7 @@
     <header class="page-header">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logotype--desktop.svg">
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
         </picture>
       </a>
@@ -27,7 +27,7 @@
             <a class="site-list__item-link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="photo.html">Фото и видео</a>
+            <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link" href="form.html">Форма отзыва</a>
@@ -38,7 +38,7 @@
         </ul>
       </nav>
       <div class="page-header__intro">
-        <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
+        <img src="img/intro-text.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
       </div>
     </header>
     <main class="page-main">
@@ -55,9 +55,12 @@
             </div>
             <div class="main-advantages__image">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-city--desktop@1x.jpg 1x, img/photo-city--desktop@2x.jpg 2x, img/photo-city--desktop@3x.jpg 3x">
-                <source media="(min-width: 768px)" srcset="img/photo-city--tablet@1x.jpg 1x, img/photo-city--tablet@2x.jpg 2x, img/photo-city--tablet@3x.jpg 3x">
-                <img src="img/photo-city--mobile@1x.jpg" srcset="img/photo-city--mobile@2x.jpg 2x, img/photo-city--mobile@3x.jpg 3x" width="320" height="260" alt="Фото города Седоны">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x, img/photo-city-desktop@3x.webp 3x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x, img/photo-city-tablet@3x.webp 3x">
+                <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x, img/photo-city-mobile@3x.webp 3x">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x, img/photo-city-desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x, img/photo-city-tablet@3x.jpg 3x">
+                <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x, img/photo-city-mobile@3x.jpg 3x" width="320" height="260" alt="Фото города Седоны">
               </picture>
             </div>
             <b class="visually-hidden">Наши рекомендации</b>
@@ -84,9 +87,12 @@
             </div>
             <div class="main-advantages__image main-advantages__image--order">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge--desktop@1x.jpg 1x, img/photo-bridge--desktop@2x.jpg 2x, img/photo-bridge--desktop@3x.jpg 3x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge--tablet@1x.jpg 1x, img/photo-bridge--tablet@2x.jpg 2x, img/photo-bridge--tablet@3x.jpg 3x">
-                <img src="img/photo-bridge--mobile@1x.jpg" srcset="img/photo-bridge--mobile@2x.jpg 2x, img/photo-bridge--mobile@3x.jpg 3x" width="320" height="260" alt="Фото «Моста Дьявола»">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x, img/photo-bridge-desktop@3x.webp 3x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x, img/photo-bridge-tablet@3x.webp 3x">
+                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x, img/photo-bridge-mobile@3x.webp 3x">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@3x.jpg 3x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@3x.jpg 3x">
+                <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@3x.jpg 3x" width="320" height="260" alt="Фото «Моста Дьявола»">
               </picture>
             </div>
           </li>
