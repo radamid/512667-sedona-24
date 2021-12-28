@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона. Фото и видео</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -14,7 +14,7 @@
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logotype--desktop.svg">
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
         </picture>
       </a>
@@ -38,7 +38,7 @@
         </ul>
       </nav>
       <div class="page-header__intro page-header__intro--inner">
-        <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
+        <img src="img/intro-text.svg" width="282" height="214" alt="Добро пожаловать в Седону, «потому что Гранд-Каньон — отстой!»">
       </div>
     </header>
     <main class="page-main">
@@ -49,9 +49,12 @@
         <article class="photo-gallery__article photo-gallery__article--first photo">
           <a class="photo__link photo__link--first" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-1--desktop@1x.jpg 1x, img/photo-1--desktop@2x.jpg 2x, img/photo-1--desktop@3x.jpg 3x">
-              <source media="(min-width: 768px)" srcset="img/photo-1--tablet@1x.jpg 1x, img/photo-1--tablet@2x.jpg 2x, img/photo-1--tablet@3x.jpg 3x">
-              <img src="img/photo-1--mobile@1x.jpg" srcset="img/photo-1--mobile@2x.jpg 2x, img/photo-1--mobile@3x.jpg 3x" width="280" height="280" alt="Фото загородной автодороги">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x, img/photo-1-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x, img/photo-1-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x, img/photo-1-mobile@3x.webp 3x">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@3x.jpg 3x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@3x.jpg 3x" width="280" height="280" alt="Фото загородной автодороги">
             </picture>
           </a>
           <div class="photo__info photo__info--first photo-info">
@@ -75,9 +78,12 @@
         <article class="photo-gallery__article photo">
           <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-2--desktop@1x.jpg 1x, img/photo-2--desktop@2x.jpg 2x, img/photo-2--desktop@3x.jpg 3x">
-              <source media="(min-width: 768px)" srcset="img/photo-2--tablet@1x.jpg 1x, img/photo-2--tablet@2x.jpg 2x, img/photo-2--tablet@3x.jpg 3x">
-              <img src="img/photo-2--mobile@1x.jpg" srcset="img/photo-2--mobile@2x.jpg 2x, img/photo-2--mobile@3x.jpg 3x" width="280" height="280" alt="Фото луговых цветов на фоне гор">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x, img/photo-2-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x, img/photo-2-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x, img/photo-2-mobile@3x.webp 3x">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@3x.jpg 3x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@3x.jpg 3x" width="280" height="280" alt="Фото луговых цветов на фоне гор">
             </picture>
           </a>
           <div class="photo__info photo-info">
@@ -101,9 +107,12 @@
         <article class="photo-gallery__article photo">
           <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-3--desktop@1x.jpg 1x, img/photo-3--desktop@2x.jpg 2x, img/photo-3--desktop@3x.jpg 3x">
-              <source media="(min-width: 768px)" srcset="img/photo-3--tablet@1x.jpg 1x, img/photo-3--tablet@2x.jpg 2x, img/photo-3--tablet@3x.jpg 3x">
-              <img src="img/photo-3--mobile@1x.jpg" srcset="img/photo-3--mobile@2x.jpg 2x, img/photo-3--mobile@3x.jpg 3x" width="280" height="280" alt="Фото автодороги-серпантин среди хвойного леса">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x, img/photo-3-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x, img/photo-3-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x, img/photo-3-mobile@3x.webp 3x">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x, img/photo-3-tablet@3x.jpg 3x">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@3x.jpg 3x" width="280" height="280" alt="Фото автодороги-серпантин среди хвойного леса">
             </picture>
           </a>
           <div class="photo__info photo-info photo-info--background">
@@ -127,9 +136,12 @@
         <article class="photo-gallery__article photo">
           <a class="photo__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-4--desktop@1x.jpg 1x, img/photo-4--desktop@2x.jpg 2x, img/photo-4--desktop@3x.jpg 3x">
-              <source media="(min-width: 768px)" srcset="img/photo-4--tablet@1x.jpg 1x, img/photo-4--tablet@2x.jpg 2x, img/photo-4--tablet@3x.jpg 3x">
-              <img src="img/photo-4--mobile@1x.jpg" srcset="img/photo-4--mobile@2x.jpg 2x, img/photo-4--mobile@3x.jpg 3x" width="280" height="280" alt="Фото горного перешейка, по виду как мост">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x, img/photo-4-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x, img/photo-4-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x, img/photo-4-mobile@3x.webp 3x">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@3x.jpg 3x">
+              <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@3x.jpg 3x" width="280" height="280" alt="Фото горного перешейка, по виду как мост">
             </picture>
           </a>
           <div class="photo__info photo-info">
@@ -159,9 +171,12 @@
           <h3 class="visually-hidden">Видеоролик «Дорога в Седону - дорога в рай»</h3>
           <div class="video__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/video-1--desktop@1x.jpg 1x, img/video-1--desktop@2x.jpg 2x, img/video-1--desktop@3x.jpg 3x">
-              <source media="(min-width: 768px)" srcset="img/video-1--tablet@1x.jpg 1x, img/video-1--tablet@2x.jpg 2x, img/video-1--tablet@3x.jpg 3x">
-              <img src="img/video-1--mobile@1x.jpg" srcset="img/video-1--mobile@2x.jpg 2x, img/video-1--mobile@3x.jpg 3x" width="320" height="201" alt="Кадр из презентации, отображающий автодорогу в Седону из Гранд-Каньона">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-1-desktop@1x.webp 1x, img/video-1-desktop@2x.webp 2x, img/video-1-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-1-tablet@1x.webp 1x, img/video-1-tablet@2x.webp 2x, img/video-1-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/video-1-mobile@1x.webp 1x, img/video-1-mobile@2x.webp 2x, img/video-1-mobile@3x.webp 3x">
+              <source media="(min-width: 1200px)" srcset="img/video-1-desktop@1x.jpg 1x, img/video-1-desktop@2x.jpg 2x, img/video-1-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/video-1-tablet@1x.jpg 1x, img/video-1-tablet@2x.jpg 2x, img/video-1-tablet@3x.jpg 3x">
+              <img src="img/video-1-mobile@1x.jpg" srcset="img/video-1-mobile@2x.jpg 2x, img/video-1-mobile@3x.jpg 3x" width="320" height="201" alt="Кадр из презентации, отображающий автодорогу в Седону из Гранд-Каньона">
             </picture>
           </div>
           <div class="video__controls video-panel">
