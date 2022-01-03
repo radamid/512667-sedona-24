@@ -70,13 +70,13 @@ const createWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/logo-*.svg', '!source/img/button-*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/logo-*.svg', '!source/img/button-*.svg', '!source/img/intro-*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
 }
 
 const sprite = () => {
-  return gulp.src(['source/img/logo-*.svg', 'source/img/button-*.svg'])
+  return gulp.src(['source/img/logo-*.svg', 'source/img/button-*.svg', 'source/img/intro-*.svg'])
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true

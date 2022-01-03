@@ -38,40 +38,90 @@
 .page-header__intro {
   position: relative;
   width: 320px;
-  height: 389px;
   margin: 0 auto;
   background-image: url("../img/bg-intro-mobile@1x.jpg");
-
-  &--inner {
-    height: 158px;
-    background-position: bottom center;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 52px;
-      left: 0;
-      right: 0;
-      height: 39px;
-      background-image: url("../img/bg-intro-sedona.svg");
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: 229px 39px;
-    }
-
-    & img {
-      opacity: 0;
-    }
-  }
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-intro-mobile@2x.jpg");
-    background-size: 320px auto;
   }
 
   @media (min-resolution: 3dppx) {
     background-image: url("../img/bg-intro-mobile@3x.jpg");
-    background-size: 320px auto;
+  }
+
+  & svg {
+    display: block;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+
+  &--inner {
+    & svg {
+      padding-top: 52px;
+      padding-bottom: 67px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-image: url("../img/bg-intro-tablet@1x.jpg");
+    background-size: 768px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-tablet@2x.jpg");
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/bg-intro-tablet@3x.jpg");
+    }
+
+    & svg {
+      width: 461px;
+      height: 350px;
+      padding-top: 77px;
+      padding-bottom: 91px;
+    }
+
+    &--inner {
+      & svg {
+        width: 457px;
+        height: 78px;
+        padding-top: 95px;
+        padding-bottom: 117px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-image: url("../img/bg-intro-desktop@1x.jpg");
+    background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-intro-desktop@2x.jpg");
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/bg-intro-desktop@3x.jpg");
+    }
+
+    & svg {
+      padding-top: 78px;
+      padding-bottom: 90px;
+    }
+
+    &--inner {
+      & svg {
+        width: 460px;
+        height: 80px;
+        padding-top: 101px;
+        padding-bottom: 120px;
+      }
+    }
   }
 
   &::before {
@@ -84,71 +134,5 @@
     background-image: url("../img/bg-intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    height: 518px;
-    background-image: url("../img/bg-intro-tablet@1x.jpg");
-
-    &--inner {
-      height: 290px;
-      background-position: bottom center;
-
-      &::after {
-        top: 95px;
-        height: 78px;
-        background-size: 457px 78px;
-      }
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-intro-tablet@2x.jpg");
-      background-size: 768px auto;
-    }
-
-    @media (min-resolution: 3dppx) {
-      background-image: url("../img/bg-intro-tablet@3x.jpg");
-      background-size: 768px auto;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    height: 518px;
-    background-image: url("../img/bg-intro-desktop@1x.jpg");
-
-    &--inner {
-      height: 301px;
-      background-position: bottom center;
-
-      &::after {
-        top: 102px;
-        height: 80px;
-        background-size: 460px 80px;
-      }
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-intro-desktop@2x.jpg");
-      background-size: 1200px auto;
-    }
-
-    @media (min-resolution: 3dppx) {
-      background-image: url("../img/bg-intro-desktop@3x.jpg");
-      background-size: 1200px auto;
-    }
-  }
-
-  & img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 90px;
-
-    @media (min-width: @tablet-width) {
-      width: 460px;
-      height: 350px;
-      padding-top: 77px;
-    }
   }
 }
