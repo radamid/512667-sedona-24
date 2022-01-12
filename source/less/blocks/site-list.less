@@ -43,8 +43,7 @@
       padding-bottom: 6px;
     }
 
-    &:not(&--current):hover,
-    &:not(&--current):focus {
+    &:not(&--current):hover {
       background-color: @blue-base--hover;
     }
 
@@ -71,8 +70,7 @@
       color: @brown-base;
     }
 
-    &:not(&--current):hover,
-    &:not(&--current):focus {
+    &:not(&--current):hover {
       color: @blue-base;
     }
 
@@ -89,4 +87,15 @@
 .site-list__item-link {
   display: block;
   color: inherit;
+
+  &:focus {
+    background-color: @blue-base--hover;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:focus {
+      color: @blue-base;
+      background-color: inherit;
+    }
+  }
 }

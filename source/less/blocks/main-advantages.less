@@ -22,19 +22,11 @@
         content: "";
         top: 0;
         left: 0;
-        width: 50%;
-        height: 37px;
-        background-image: linear-gradient(to right top, transparent 0%, transparent 49%, @white-base 51%, @white-base 100%);
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 0;
         right: 0;
-        width: 50%;
         height: 37px;
-        background-image: linear-gradient(to left top, transparent 0%, transparent 49%, @white-base 51%, @white-base 100%);
+        background-image: url("../img/bg-advantages-triangle.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
       }
     }
   }
@@ -43,12 +35,13 @@
     width: 256px;
     padding: 0 32px;
     padding-top: 40px;
-    padding-bottom: 43px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
     padding-top: 47px;
+    padding-bottom: 27px;
   }
 }
 
