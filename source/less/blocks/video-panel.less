@@ -38,6 +38,7 @@
 }
 
 .video-panel__button {
+  padding: 0;
   border: none;
   box-sizing: border-box;
   mix-blend-mode: normal;
@@ -47,49 +48,56 @@
 
   &--volume {
     display: block;
-    width: 11px;
-    height: 11px;
+    width: 9px;
+    height: 9px;
     margin-top: 18px;
-    margin-left: 50px;
+    margin-left: 58px;
     border-radius: 50%;
     box-sizing: border-box;
     background-color: @white-base;
 
     @media (min-width: @tablet-width) {
       margin-top: 41px;
-      margin-left: 200px;
-    }
-  }
-
-  &--replay {
-    & svg {
-      fill: @gray-button;
-
-      @media (min-width: @tablet-width) {
-        fill: @white-base;
-      }
+      margin-left: 206px;
     }
   }
 
   &--subtitles {
     margin-left: auto;
     margin-right: 31px;
+  }
 
+  & svg {
+    fill: @gray-button;
+    opacity: 1;
+
+    @media (min-width: @tablet-width) {
+      fill: @white-base;
+      opacity: 1;
+    }
+  }
+
+  &:hover,
+  &:focus {
     & svg {
-      fill: @gray-button;
+      fill: @sub-black;
+      opacity: 1;
 
       @media (min-width: @tablet-width) {
         fill: @white-base;
+        opacity: 0.6;
       }
     }
   }
 
-  &--fullscreen {
+  &:active {
     & svg {
-      fill: @gray-button;
+      fill: @sub-black;
+      opacity: 0.3;
 
       @media (min-width: @tablet-width) {
         fill: @white-base;
+        opacity: 0.3;
       }
     }
   }
