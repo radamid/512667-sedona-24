@@ -13,14 +13,27 @@
   color: @black-base;
 
   @media (min-width: @tablet-width) {
+    width: 400px;
     font-size: 21px;
 
     &::before {
       top: 40px;
+      left: -124px;
     }
 
     &::after {
       top: 40px;
+      right: -124px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: -280px;
+    }
+
+    &::after {
+      right: -280px;
     }
   }
 }

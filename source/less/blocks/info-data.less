@@ -5,6 +5,8 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
+    box-sizing: border-box;
+    border-left: 1px solid @gray-base--disabled;
   }
 }
 
@@ -16,6 +18,7 @@
   color: @black-base;
 
   @media (min-width: @tablet-width) {
+    width: auto;
     padding-top: 0;
     padding-left: 58px;
     font-size: 21px;
@@ -25,7 +28,7 @@
       position: absolute;
       content: "";
       top: 0;
-      left: 0;
+      left: -1px;
       width: 1px;
       height: 292px;
       background-color: @gray-base--disabled;
