@@ -88,6 +88,12 @@
   display: block;
   color: inherit;
 
+  &:not(&--current):hover,
+  &:not(&--current):active {
+    color: inherit;
+    background-color: inherit;
+  }
+
   &:focus {
     background-color: @blue-base--hover;
   }
