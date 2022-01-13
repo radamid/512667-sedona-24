@@ -37,6 +37,11 @@
   &--reviews-form {
     width: 280px;
     margin: 48px 0;
+
+    &:disabled {
+      background-color: @gray-base--disabled;
+      cursor: text;
+    }
   }
 
   @media (min-width: @tablet-width) {
